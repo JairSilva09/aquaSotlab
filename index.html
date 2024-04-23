@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c81599c453.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <title>Dashboard</title>
+  </head>
+<body>
+    <div class="container" id="container">
+        <header class="header-dashboard">         
+          <span id="menu-toggle" style="cursor: pointer;"><i class="fa-solid fa-bars"></i></span>
+          <div class="header-cont-perfil">
+            <h1>Dashboard</h1>
+            <header>
+                <button type="submit">Usuarios</button>   <button type="submit">Cliente</button>   <button type="submit">Analisis</button>   <button type="submit">Informativo</button>
+              </header>
+
+            <div class="img-perfil">
+            </div>
+          </div>          
+        </header>
+        <nav class="sidebar background1" id="sidebar">
+            <h2>Menu</h2>
+            <ul>
+
+                <button type="submit"><i class="lni lni-stats-up"></i>  Dashboard</button>
+                <button type="submit"><i class="lni lni-users"></i>  Recepción</button>
+                <button type="submit"><i class="lni lni-folder"></i>  Informes</button>
+                <button type="submit"><i class="lni lni-exit"></i>  Cerrar sesión </button>
+
+              <li class="sidebar-item"></li>
+              <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi"></a>
+              
+            </ul>
+        </nav>
+        <main class="content">
+          <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Search...">
+          </div>          
+            <div class="card">          
+             
+            </div>
+            <div class="card">
+                <h2>Recent Reports</h2>
+                <p>View your most recent reports here.</p>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script> <!-- Agrega el archivo JavaScript -->
+    <script src="components/table.component.js"></script>
+</body>
+</html>
